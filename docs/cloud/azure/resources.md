@@ -1,6 +1,6 @@
 ---
 sidebar_label: Resources
-description: Resources for learning Azure.
+description: Resources for learning AzureD.
 ---
 
 ## General

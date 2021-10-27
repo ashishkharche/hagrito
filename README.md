@@ -1,5 +1,7 @@
 # Hagrito
 
+Technical Essentials Handbook
+
 ## Naming
 
 - bookmarks - for interesting blogs, links that may not be a MUST read to get started.

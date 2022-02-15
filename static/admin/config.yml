@@ -1,0 +1,633 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "assets/uploads"
+publish_mode: editorial_workflow
+collections:
+
+  - name: "docs"
+    label: "Wiki"
+    label_singular: "Wiki"
+    folder: "docs"
+    create: true
+    slug: "{{title}}"
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", hint: "Please follow the convention of the slug written in: (Add a link here stating the rule)", required: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Hide Title",
+          name: "hide_title",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          label: "Hide Table of Contents",
+          name: "hide_table_of_contents",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          label: "Sidebar Label",
+          name: "sidebar_label",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Keywords",
+          name: "keywords",
+          widget: "list",
+          default: ["Anime Summit"],
+          required: false,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "aoepisodes"
+    label: "AO Episodes"
+    label_singular: "Ao Episode"
+    folder: "docs/episodes/ao/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Hide Title",
+          name: "hide_title",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          label: "Hide Table of Contents",
+          name: "hide_table_of_contents",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          label: "Sidebar Label",
+          name: "sidebar_label",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Keywords",
+          name: "keywords",
+          widget: "list",
+          default: ["Anime Summit"],
+          required: false,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          required: false,
+        }
+      -  {
+          label: "Publish Date",
+          name: "date",
+          widget: "date",
+          format: "YYYY-MM-DDTHH:00:00Z",
+          required: true
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "mainepisodes"
+    label: "Main Episodes"
+    label_singular: "Main Episode"
+    folder: "docs/episodes/main/1-50/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "guestedepisodes"
+    label: "Guested Episodes"
+    label_singular: "Guested Episode"
+    folder: "docs/episodes/guested/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "animeany"
+    label: "Any Anime"
+    label_singular: "Any Anime"
+    folder: "any/anime/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "artany"
+    label: "Any Art"
+    label_singular: "Any Art"
+    folder: "any/art/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "lightnovelany"
+    label: "Any Light Novel"
+    label_singular: "Any Light Novel"
+    folder: "any/light-novel/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "mangaany"
+    label: "Any Manga"
+    label_singular: "Any Manga"
+    folder: "any/manga/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "musicany"
+    label: "Any Music"
+    label_singular: "Any Music"
+    folder: "any/music/"
+    create: true
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Hide Title",
+        name: "hide_title",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Hide Table of Contents",
+        name: "hide_table_of_contents",
+        widget: "boolean",
+        default: false,
+        required: false,
+      }
+      - {
+        label: "Sidebar Label",
+        name: "sidebar_label",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Keywords",
+        name: "keywords",
+        widget: "list",
+        default: [ "Anime Summit" ],
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        required: false,
+      }
+      - {
+        label: "Image",
+        name: "image",
+        widget: "image",
+        allow_multiple: false,
+        required: false,
+      }
+      - {
+        label: "Publish Date",
+        name: "date",
+        widget: "date",
+        format: "YYYY-MM-DDTHH:00:00Z",
+        required: true
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    view_groups:
+      - label: "Titles:"
+        field: title
+        # groups items based on the value matched by the pattern
+        pattern: Anime
+      - label: Drafts
+        field: draft
+    slug: "{{date}}-{{slug}}"
+    identifier_field: "title"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", required: false }
+      - {
+          label: "Author Title",
+          name: "author_title",
+          widget: "string",
+          default: "Fan Of The Summit",
+          required: false,
+        }
+      - {
+          label: "Author URL",
+          name: "author_url",
+          widget: "string",
+          default: "https://animesummit.net/",
+          required: false,
+        }
+      - {
+          label: "Author Image",
+          name: "author_image_url",
+          widget: "image",
+          allow_multiple: false,
+          required: false,
+        }
+      - {
+          label: "Hide Table of Contents",
+          name: "hide_table_of_contents",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          allow_add: true,
+        }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          timeFormat: false,
+        }
+      - { label: "Description", name: "description", required: false }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "src/pages"
+    path: "{{id}}"
+    create: true
+    identifier_field: "{{title}}"
+    extension: "js"
+    format: "json-frontmatter" # using this because neither netlify nor 11ty would parse the "hh:mm" formatted times correctly in the yaml frontmatter because it's not saved with quotes around it
+    frontmatter_delimiter: ["/*\n{", "}\n*/"]
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

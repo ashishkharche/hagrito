@@ -17,6 +17,7 @@ module.exports = {
         colorMode: {
             respectPrefersColorScheme: true,
         },
+        hideableSidebar: true,
         navbar: {
             title: 'Anime Summit',
             logo: {

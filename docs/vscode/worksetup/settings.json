@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[markdown]": {
+        "editor.quickSuggestions": true
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "git.enableSmartCommit": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "window.zoomLevel": 1
+}

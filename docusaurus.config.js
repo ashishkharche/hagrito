@@ -1,15 +1,15 @@
 const path = require("path");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'Anime Summit',
+    title: 'Hagrito',
     tagline: 'Notes',
-    url: 'https://animesummit.net',
+    url: 'https://hagrito.net',
     baseUrl: '/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/chan.ico',
-    organizationName: 'androiddevnotes', // Usually your GitHub org/user name.
-    projectName: 'animesummit', // Usually your repo name.
+    favicon: 'img/logo.ico',
+    organizationName: 'ashishkharche', // Usually your GitHub org/user name.
+    projectName: 'hagrito', // Usually your repo name.
     // customFields: {
     //   trailingSlash: true
     // },
@@ -19,10 +19,10 @@ module.exports = {
         },
         hideableSidebar: true,
         navbar: {
-            title: 'Anime Summit',
+            title: 'Hagrito',
             logo: {
-                alt: 'Anime Summit Logo',
-                src: 'img/logo.svg',
+                alt: 'Hagrito Logo',
+                src: 'img/hagrito.png',
             },
 
             // items: [
@@ -40,7 +40,7 @@ module.exports = {
             //     },
             //     {to: '/blog', label: 'Blog', position: 'left'},
             //     {
-            //         href: 'https://github.com/androiddevnotes/animesummit',
+            //         href: 'https://github.com/ashishkharche/hagrito',
             //         label: 'GitHub',
             //         position: 'right',
             //     },
@@ -57,23 +57,48 @@ module.exports = {
                             label: "Intro",
                         },
                         {
-                            to: "/wiki/category/ao",
-                            activeBasePath: "/docs/ao",
-                            label: "AO",
+                            to: "/wiki/category/languages",
+                            activeBasePath: "/docs/languages",
+                            label: "Languages",
                         },
                         {
-                            to: "/wiki/category/guested",
-                            activeBasePath: "/docs/guested",
-                            label: "Guested",
+                            to: "/wiki/category/networking",
+                            activeBasePath: "/docs/networking",
+                            label: "Networking",
                         },
                         {
-                            to: "/wiki/category/main",
-                            activeBasePath: "/docs/main",
-                            label: "Main",
+                            to: "/wiki/category/cloud",
+                            activeBasePath: "/docs/cloud",
+                            label: "Cloud",
+                        },
+                        {
+                            to: "/wiki/category/command-line",
+                            activeBasePath: "/docs/command-line",
+                            label: "Command-line",
+                        },
+                        {
+                            to: "/wiki/category/software-development",
+                            activeBasePath: "/docs/software-development",
+                            label: "Software Development",
+                        },
+                        {
+                            to: "/wiki/category/data-science",
+                            activeBasePath: "/docs/data-science",
+                            label: "Data Science",
+                        },
+                        {
+                            to: "/wiki/category/operating-system",
+                            activeBasePath: "/docs/operating-system",
+                            label: "Operating System",
+                        },
+                        {
+                            to: "/wiki/category/general",
+                            activeBasePath: "/docs/general",
+                            label: "General",
                         },
                     ],
                 },
-                {to: '/any', label: 'Any', position: 'right'},
+                {to: '/wip', label: 'WIP', position: 'right'},
                 {
                     to: "/blog",
                     activeBasePath: "/blog",
@@ -86,12 +111,12 @@ module.exports = {
         },
         algolia: {
             // The application ID provided by Algolia
-            appId: 'LP3LNUFLMH',
+            appId: 'UEBIPQ5PA4',
 
             // Public API key: it is safe to commit it
-            apiKey: '39eca361cd08297e3d0dd1d3327b864b',
+            apiKey: '5c2b64dce59187f45f8c6cfb78dabeb5',
 
-            indexName: 'indexname',
+            indexName: 'hagritoalgoliaindex',
 
             // Optional: see doc section below
             contextualSearch: true,
@@ -114,7 +139,7 @@ module.exports = {
                 //     sidebarPath: require.resolve('./sidebars.js'),
                 //     // Please change this to your repo.
                 //     editUrl:
-                //         'https://github.com/androiddevnotes/animesummit/edit/main/',
+                //         'https://github.com/ashishkharche/hagrito/edit/main/',
                 // },
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
@@ -143,7 +168,7 @@ module.exports = {
                     showReadingTime: true,
                     // Please change this to your repo.
                     editUrl:
-                        'https://github.com/androiddevnotes/animesummit/edit/main/',
+                        'https://github.com/ashishkharche/hagrito/edit/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

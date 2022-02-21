@@ -43,7 +43,7 @@ collections:
           label: "Keywords",
           name: "keywords",
           widget: "list",
-          default: ["Anime Summit"],
+          default: ["Hagrito"],
           required: false,
         }
       - {
@@ -97,7 +97,7 @@ collections:
           label: "Keywords",
           name: "keywords",
           widget: "list",
-          default: ["Anime Summit"],
+          default: ["Hagrito"],
           required: false,
         }
       - {
@@ -158,7 +158,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -219,7 +219,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -279,7 +279,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -339,7 +339,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -399,7 +399,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -459,7 +459,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -519,7 +519,7 @@ collections:
         label: "Keywords",
         name: "keywords",
         widget: "list",
-        default: [ "Anime Summit" ],
+        default: [ "Hagrito" ],
         required: false,
       }
       - {
@@ -576,7 +576,7 @@ collections:
           label: "Author URL",
           name: "author_url",
           widget: "string",
-          default: "https://animesummit.net/",
+          default: "https://hagrito.net/",
           required: false,
         }
       - {

@@ -1,12 +1,12 @@
 ---
 title: Introduction
 sidebar_position: 1
-description: The Anime Summit Podcast spawned from the /r/Anime Reddit Community as a project to help spread our love of anime and get more connected to the content we enjoy!
+description: The Hagrito Podcast spawned from the /r/Anime Reddit Community as a project to help spread our love of anime and get more connected to the content we enjoy!
 slug: /
 ---
 
-# Anime Summit
+# Hagrito
 
-Introduction to Anime Summit Wiki
+Introduction to Hagrito Wiki
 
 ## ...

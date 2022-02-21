@@ -7,4 +7,3 @@ description: How to structure content.
 
 ## Wiki
 
-In file strucutre

@@ -38,7 +38,7 @@ export const Community = () => {
                 </li>
             </ul>
             <p className="mt-8">
-                Thank you for read the technical essentials handbook. You can contribute to the content by sending a PR on {" "}
+                Thank you for reading the technical essentials handbook. You can contribute to the content by sending a PR on {" "}
                 <a className="hover:underline" href="https://github.com/ashishkharche/hagrito">
                     GitHub
                 </a>

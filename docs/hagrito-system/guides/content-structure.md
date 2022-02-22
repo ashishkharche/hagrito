@@ -7,7 +7,7 @@ description: How to structure content.
 
 ## README.md
 
-Every directory must have a `README.md` file.
+Every directory must either have a `README.md` or `_category_.json` or both files.
 
 This file will be seen at the front when navigating source code on GitHub or on docusaurus when clicked on the directory name in sidebar.
 
@@ -15,9 +15,9 @@ The content in this file should give an overview and additional, as seen fit, de
 
 It should tell readers what to expect and what the topic is about at the least.
 
-## _category.json
+## _category_.json
 
-Every directory must have a `_category.json` file.
+Every directory must either have a `README.md` or `_category_.json` or both files.
 
 This file is used to add custom label to the sidebar and adjust position of items in the sidebar.
 
@@ -31,24 +31,20 @@ $ tree -f
 |-- ./README.md
 |-- ./_category_.json
 |-- ./guides
-|   |-- ./guides/README.md
-|   |-- ./guides/_category_.json
+|   |-- ./guides/README.md <-- OKAY, as it has one of the two files.
 |   |-- ./guides/getting-started
-|   |   |-- ./guides/getting-started/README.md
-|   |   |-- ./guides/getting-started/_category_.json
+|   |   |-- ./guides/getting-started/_category_.json <-- OKAY, as it has one of the two files.
 |   |   |-- ./guides/getting-started/installing.md
 |   |   |-- ./guides/getting-started/intro.md
 |   |   |-- ./guides/getting-started/ssh.md
 |   |   `-- ./guides/getting-started/vscode.md
-|   `-- ./guides/other
+|   `-- ./guides/other <-- NOT RECOMMENDED, as it does not have either files README.md or _category_.json
 |       `-- ./guides/other/intro.md
-|-- ./sub-topic
-|   |-- ./sub-topic/README.md
-|   |   `-- ./sub-topic/README.md/guides
-|   |       `-- ./sub-topic/README.md/guides/_category_.json
+|-- ./sub-topic <-- OKAY, as it has both files.
+|   |-- ./sub-topic/README.md 
 |   `-- ./sub-topic/_category_.json
 `-- ./tech-support
-    `-- ./tech-support/README.md
+    `-- ./tech-support/README.md <-- OKAY, as it has one of the two files.
 
 7 directories, 14 files
 ```

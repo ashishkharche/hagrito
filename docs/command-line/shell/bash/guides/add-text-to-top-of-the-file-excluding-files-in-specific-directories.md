@@ -6,7 +6,7 @@ description: Add text to top of the file excluding files in specific directories
 # Add text to top of the file excluding files in specific directories
 
 ```bash
-#!/bin/bash 
+#!/bin/bash
 
 function addThreeDash {
 echo "---"
@@ -55,9 +55,9 @@ do
             whenEmptyAddContent
         else
             echo "else of ! -e"
-            
+
             whenEmptyAddContent
         fi
     fi
-done  
+done
 ```

@@ -178,10 +178,10 @@ module.exports = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "any",
-        path: "any",
-        routeBasePath: "any",
-        sidebarPath: require.resolve("./sidebarAny.js"),
+        id: "wip",
+        path: "wip",
+        routeBasePath: "wip",
+        sidebarPath: require.resolve("./sidebarWip.js"),
       },
     ],
   ],

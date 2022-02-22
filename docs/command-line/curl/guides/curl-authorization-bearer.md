@@ -1,6 +1,6 @@
 ---
-sidebar_label: TOPIC
-description: TOPIC.
+sidebar_label: curl authorization bearer
+description: curl authorization bearer.
 ---
 
 # curl authorization bearer

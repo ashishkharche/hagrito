@@ -174,7 +174,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    path.resolve("./src/plugins/sitemap-to-json"),
+    path.resolve("./plugins/sitemap-to-json"),
     [
       "@docusaurus/plugin-content-docs",
       {

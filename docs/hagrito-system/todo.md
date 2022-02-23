@@ -5,6 +5,14 @@ description: Todo.
 
 # Todo
 
+## Delete .json files script
+
+Currently it deletes file even in `guides` directory. This is not intended.
+
+Maybe the fix is using not path instead of if condition.
+
+[bash - Exclude a sub-directory using find - Stack Overflow](https://stackoverflow.com/questions/13460482/exclude-a-sub-directory-using-find)
+
 ## Remove `---`
 
 This is to remove all the content before and including second occurrence of `---` from `.md` or `.mdx` files.

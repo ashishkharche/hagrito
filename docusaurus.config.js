@@ -161,6 +161,7 @@ module.exports = {
           // excludeNextVersionDocs: false,
           // // below remark plugin disabled until we can figure out why it is not transpiling to ESNext properly - swyx
           // // original PR https://github.com/asupio/documentation/pull/496/files
+          breadcrumbs: true,
         },
         blog: {
           showReadingTime: true,

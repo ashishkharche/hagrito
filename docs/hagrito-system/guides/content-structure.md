@@ -41,6 +41,10 @@ The `bookmarks` file should contain links to resources on internet or within the
 
 The `resources` file should contains links to resources on internet that are considered important and one must or should refer to them to complete their understanding of foundational level atleast.
 
+## `todo`
+
+The `todo` file contains what can be considered a todo. What may be deleted from the site or moved to appropriate location to other parts of the site like `guides` or `notes`.
+
 ## `tech-support`
 
 The `tech-support` directory contains workarounds, help related entries for the particular topic.
@@ -53,15 +57,13 @@ The field should contain:
 ---
 title: Docs Markdown Features
 sidebar_label: Markdown
-sidebar_position: 3
-pagination_label: Markdown features
-custom_edit_url: https://github.com/facebook/docusaurus/edit/main/docs/api-doc-markdown.md
 description: How do I find you when I cannot solve this problem
 keywords:
   - docs
   - docusaurus
-image: https://i.imgur.com/mErPwqL.png
-slug: /myDoc
+tags:
+  - one
+  - two
 ---
 
 # Markdown Features

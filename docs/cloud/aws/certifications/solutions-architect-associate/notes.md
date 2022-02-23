@@ -3,6 +3,14 @@ sidebar_label: Notes
 description: Notes.
 ---
 
+## Cluster endpoint for Aurora DB
+
+The cluster endpoint or writer endpoint connects to the primary instance of the cluster.
+
+## Reader endpoint for Aurora DB
+
+A reader endpoint for an Aurora DB cluster provides load-balancing support for read-only connections to the DB cluster. 
+
 ## Amazon API Gateway
 
 Support for stateful (WebSocket) and stateless (HTTP and REST) APIs.

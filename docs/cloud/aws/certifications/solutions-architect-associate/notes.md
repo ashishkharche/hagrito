@@ -3,6 +3,10 @@ sidebar_label: Notes
 description: Notes.
 ---
 
+## VPC Flow Logs
+
+Flow Logs are used in VPC and not on specific EC2 instance.
+
 ## Cluster endpoint for Aurora DB
 
 The cluster endpoint or writer endpoint connects to the primary instance of the cluster.
@@ -56,7 +60,7 @@ Answer: 6
 
 It is a service that enables customers to connect their Amazon Virtual Private Clouds (VPCs) and their on-premises networks to a single gateway. As you grow the number of workloads running on AWS, you need to be able to scale your networks across multiple accounts and Amazon VPCs to keep up with the growth.
 
-## Amazon SWF
+## Amazon Simple Workflow (SWF)
 
 Amazon SWF provides useful guarantees around task assignments. It ensures that a task is never duplicated and is assigned only once. Thus, even though you may have multiple workers for a particular activity type (or a number of instances of a decider), Amazon SWF will give a specific task to only one worker (or one decider instance). 
 
@@ -330,6 +334,8 @@ Billed
 
 > Because you have to use the security group ID instead of the Network ACL ID of the application tier. Take note that the Network ACL covers the entire subnet which means that other applications that use the same subnet will also be affected.
 
+You have to use the security group ID instead of the Network ACL ID of the application tier. Take note that the Network ACL covers the entire subnet which means that other applications that use the same subnet will also be affected.
+
 ## VPC peering connections
 
 a VPC peering connection does not support edge to edge routing. This means that if either VPC in a peering relationship has one of the following connections, you cannot extend the peering relationship to that connection:
@@ -396,7 +402,15 @@ You can't create a CNAME record at the zone apex. For example, if you register t
 
 ## Subnet
 
+Every subnet that you create is automatically associated with the main route table for the VPC.
+
 A subnet is a range of IP addresses in your VPC. You can launch AWS resources into a specified subnet. When you create a VPC, you must specify a range of IPv4 addresses for the VPC in the form of a CIDR block. Each subnet must reside entirely within one Availability Zone and cannot span zones. You can also optionally assign an IPv6 CIDR block to your VPC, and assign IPv6 CIDR blocks to your subnets.
+
+Your VPC has an implicit router and you use route tables to control where network traffic is directed. Each subnet in your VPC must be associated with a route table, which controls the routing for the subnet (subnet route table). You can explicitly associate a subnet with a particular route table. Otherwise, the subnet is implicitly associated with the main route table.
+
+A subnet can only be associated with one route table at a time, but you can associate multiple subnets with the same subnet route table. You can optionally associate a route table with an internet gateway or a virtual private gateway (gateway route table). This enables you to specify routing rules for inbound traffic that enters your VPC through the gateway
+
+Be sure that the subnet route table also has a route entry to the internet gateway. If this entry doesn’t exist, the instance is in a private subnet and is inaccessible from the internet.
 
 ## AWS Resource Access Manager (RAM)
 

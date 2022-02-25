@@ -3,6 +3,16 @@ sidebar_label: Notes
 description: Notes.
 ---
 
+## Cloudtrail
+
+By default, CloudTrail event log files are encrypted using Amazon S3 server-side encryption (SSE). 
+
+## Amazon S3
+
+Objects must be stored at least 30 days in the current storage class before you can transition them to STANDARD_IA or ONEZONE_IA. 
+
+You can directly transition your data to Glacier after one week (7 days)
+
 ## VPC Flow Logs
 
 Flow Logs are used in VPC and not on specific EC2 instance.
@@ -377,6 +387,8 @@ By default, instances that you launch into a virtual private cloud (VPC) can't c
 AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
 
 ## VPC endpoint
+
+VPC endpoints are region-specific only and do not support inter-region communication.
 
 A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
 

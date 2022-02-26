@@ -3,7 +3,51 @@ sidebar_label: Notes
 description: Notes.
 ---
 
-## Cloudtrail
+## AWS Glue
+
+AWS Glue is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development. AWS Glue provides all the capabilities needed for data integration, so you can start analyzing your data and putting it to use in minutes instead of months.
+
+## AWS Secrets Manager
+
+AWS Secrets Manager is a secrets management service that helps you protect access to your applications, services, and IT resources. This service enables you to easily rotate, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle. Using Secrets Manager, you can secure and manage secrets used to access resources in the AWS Cloud, on third-party services, and on-premises.
+
+## CloudTrail data events
+
+CloudTrail data events (also known as "data plane operations") show the resource operations performed on or within a resource in your AWS account. These operations are often high-volume activities.
+
+## CloudTrail management events
+
+CloudTrail management events (also known as "control plane operations") show management operations that are performed on resources in your AWS account.
+
+## CloudWatch Logs agent
+
+The CloudWatch Logs agent provides an automated way to send log data to CloudWatch Logs from Amazon EC2 instances.
+
+## Amazon Elastic File System (EFS)
+
+Amazon Elastic File System (Amazon EFS) is a simple, serverless, set-and-forget elastic file system that makes it easy to set up, scale, and cost-optimize file storage in AWS.
+
+## Elastic IP addresses
+
+An Elastic IP address is a static IPv4 address designed for dynamic cloud computing. An Elastic IP address is allocated to your AWS account, and is yours until you release it. 
+
+## Equal Cost Multipath Routing (ECMR)
+
+Equal-cost multi-path routing (ECMP) is a routing strategy where packet forwarding to a single destination can occur over multiple best paths with equal routing priority. 
+
+## Amazon FSx for Windows File Server
+
+Amazon FSx for Windows File Server provides fully managed, highly reliable, and scalable file storage that is accessible over the industry-standard Service Message Block (SMB) protocol. It is built on Windows Server, delivering a wide range of administrative features such as user quotas, end-user file restore, and Microsoft Active Directory (AD) integration.
+
+## Amazon Data Lifecycle Manager
+
+You can use Amazon Data Lifecycle Manager to automate the creation, retention, and deletion of EBS snapshots and EBS-backed AMIs.
+
+## AWS Systems Manager Parameter Store
+
+Parameter Store, a capability of AWS Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, Amazon Machine Image (AMI) IDs, and license codes as parameter values. You can store values as plain text or encrypted data. 
+
+## AWS Cloudtrail
 
 By default, CloudTrail event log files are encrypted using Amazon S3 server-side encryption (SSE). 
 

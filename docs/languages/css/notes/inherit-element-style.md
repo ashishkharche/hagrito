@@ -5,7 +5,7 @@ description: Inherit element style.
 
 # Inherit element style
 
-Since [`<html>`](/en-US/docs/Web/HTML/Element/html) is the parent element of the whole page, all elements inside it inherit the same `font-size` and `font-family`.
+Since [`<html>`](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) is the parent element of the whole page, all elements inside it inherit the same `font-size` and `font-family`.
 
 ```css
 html {
@@ -13,3 +13,7 @@ html {
   font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
 ```
+
+## References
+
+[CSS basics - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)

@@ -5,6 +5,10 @@ description: List.
 
 # List
 
+## JavaScript Number Guessing game
+
+https://github.com/ashishkharche/hagrito-javascript/tree/main/code/javascript-number-guessing-game
+
 ## JavaScript Internal External
 
 https://github.com/ashishkharche/hagrito-javascript/tree/main/code/javascript-internal-external

@@ -5,10 +5,29 @@ description: Terminology.
 
 # Terminology
 
+## array
+
+Arrays are generally described as "list-like objects"; they are basically single objects that contain multiple values stored in a list.
+
+[Arrays - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
+
+## variable
+
+A variable is a container for a value.
+
+[Storing the information you need — Variables - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+
+## event handlers
+
+The blocks of code that run in response to the event firing are called event handlers.
+
+## event listeners
+
+The constructs that listen out for the event happening are called event listeners
 
 ## HTML
 
-[HTML](/en-US/docs/Glossary/HTML) (Hypertext Markup Language) is not a programming language. It is a _markup language_ that tells web browsers how to structure the web pages you visit.
+[HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) (Hypertext Markup Language) is not a programming language. It is a _markup language_ that tells web browsers how to structure the web pages you visit.
 
 [Getting started with HTML - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 

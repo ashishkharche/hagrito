@@ -1,9 +1,13 @@
 ---
 sidebar_label: Resources
-description: Resources for learning Web Dev.
+description: Resources for learning Software Development.
 tags: [introduction]
 ---
 
-# Web Dev - Resources
+# Resources
+
+
+
+## Web Development
 
 [Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn)

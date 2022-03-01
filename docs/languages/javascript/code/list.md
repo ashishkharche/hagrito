@@ -1,9 +1,13 @@
 ---
-sidebar_label: Resources
-description: Resources.
+sidebar_label: List
+description: List.
 ---
 
-# Resources f
+# List
+
+## JavaScript Internal External
+
+https://github.com/ashishkharche/hagrito-javascript/tree/main/code/javascript-internal-external
 
 ## Beginner html site scripted
 

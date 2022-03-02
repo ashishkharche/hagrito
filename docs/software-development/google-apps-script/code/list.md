@@ -1,9 +1,13 @@
 ---
-sidebar_label: On GitHub
-description: On GitHub.
+sidebar_label: List
+description: List.
 ---
 
-# On GitHub
+# List
+
+## Parse XML from Podcast RSS
+
+https://github.com/ashishkharche/hagrito-google-apps-script/tree/main/code/parse-xml-from-podcast-rss
 
 ## Custom UI to import CSV Spreadsheet
 

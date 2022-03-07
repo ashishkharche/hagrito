@@ -45,6 +45,26 @@ cover.setAttribute("style", css);
 document.body.appendChild(cover);
 ```
 
+## Using User Script
+
+```js
+// ==UserScript==
+// @name         Plusnet Hub Dark Pdf local
+// @namespace    https://github.com/androiddecvnotes
+// @version      1
+// @description  Inverts color on the page
+// @author       Ashish Kharche
+
+// @match        http://192.168.1.254/*
+// @noframes
+// ==/UserScript==
+/* jshint esversion: 6 */
+
+(function(){var cover=document.createElement("div");let css="position: fixed;\npointer-events: none;\ntop: 0;\nleft: 0;\nwidth: 100vw;\nheight: 100vh;\nbackground-color: white;\nmix-blend-mode: difference;\nz-index: 1;";cover.setAttribute("style", css);document.body.appendChild(cover);})(); 
+```
+
+Add this in violentscript like user script extension.
+
 ## Steps
 
 *   (If you don't see the bookmark bar) CTRL-SHIFT-B
@@ -55,3 +75,4 @@ document.body.appendChild(cover);
 *   In the URL part, if you are adding a javascript bookmarklet, paste the javscript code in. You have to prefex it with `javascript:` and it should minified and free of comments.
 
 or you can use [Bookmarkleter](https://chriszarate.github.io/bookmarkleter/)
+

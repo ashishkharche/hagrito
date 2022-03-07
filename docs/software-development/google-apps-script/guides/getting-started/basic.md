@@ -48,3 +48,7 @@ spreadsheet.getActiveSheet().setFrozenRows(1);
 This line freezes the first row of the macro.
 
 To pin data in the same place and see it when you scroll, you can freeze rows or columns
+
+## `@OnlyCurrentDoc`
+
+When the `@OnlyCurrentDoc` comment is present in a script project, Apps Script only asks for permission to access and update the current spreadsheet. Without this comment, Apps Script would ask permission to access and update _all_ of the user's spreadsheets

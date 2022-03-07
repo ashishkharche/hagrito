@@ -28,6 +28,8 @@ That means Home is the receiving device.
 
 ## Router settings
 
+**NOTE**: Prefer to use port forwarding section of "Advanced Settings" instead of only "Settings" *if* you router has options in both.
+
 We need to change the Router settings of the receiving device. 
 
 Go to your router and add port forwarding config according to the below instructions.

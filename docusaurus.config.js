@@ -62,6 +62,11 @@ module.exports = {
               label: "Languages",
             },
             {
+              to: "/wiki/category/media",
+              activeBasePath: "/docs/media",
+              label: "Media",
+            },
+            {
               to: "/wiki/category/networking",
               activeBasePath: "/docs/networking",
               label: "Networking",

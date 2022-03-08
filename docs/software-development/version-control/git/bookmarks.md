@@ -20,3 +20,7 @@ description: Bookmarks for learning Git.
 ## Scenrio
 
 [45 classic GIT operation scenarios](https://juejin.cn/post/7071064790952575007)
+
+## .gitignore
+
+[.gitignore file - ignoring files in Git | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#:~:text=If%20you%20want%20to%20ignore,directory%20as%20an%20ignored%20file.)

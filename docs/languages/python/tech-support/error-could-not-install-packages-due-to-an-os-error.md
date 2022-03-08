@@ -1,36 +1,26 @@
 ---
-sidebar_label: "ERROR: Could not install packages due to an OSError:"
-description: "ERROR: Could not install packages due to an OSError:."
+sidebar_label: "ERROR: Could not install packages due to an OSError"
+description: "ERROR: Could not install packages due to an OSError."
 ---
 
-# ERROR: Could not install packages due to an OSError:
+# ERROR: Could not install packages due to an OSError
+
+Instead of:
 
 ```
-  Attempting uninstall: pip
-    Found existing installation: pip 22.0.3
-    Uninstalling pip-22.0.3:
-ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied: 't:\\github\\py\\drivepython\\venv\\scripts\\pip.exe'
-Check the permissions.
+pip install --upgrade <packages>
 ```
 
-## Activate virtualenv
-
-## Install pip
-
-Linux:
+Do:
 
 ```
-$ python -m ensurepip --upgrade
+python -m pip install --upgrade <packages>
 ```
 
-Windows:
-
-```
-py -m ensurepip --upgrade
-```
-
-If this does not work, uninstall pip and try again installing pip.
+The `-m` flag makes sure that you are using the pip that's tied to the active Python executable.
 
 ## References
 
-[Installation - pip documentation v22.0.4](https://pip.pypa.io/en/stable/installation/)
+[Meaning of python -m flag - Stack Overflow](https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag)
+
+[New permissions errors while running `pip install --upgrade pip` on Windows - Code to Cloud / GitHub Actions - GitHub Community](https://github.community/t/new-permissions-errors-while-running-pip-install-upgrade-pip-on-windows/18323)

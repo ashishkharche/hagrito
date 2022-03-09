@@ -18,3 +18,27 @@ gcloud auth list
 ```
 gcloud config list project
 ```
+
+## Set project ID
+
+```
+gcloud config set project <project ID>
+```
+
+## Enable API
+
+```
+gcloud services enable vision.googleapis.com
+```
+
+## Get current project ID
+
+```
+gcloud info --format='value(config.project)'
+```
+
+or
+
+```
+gcloud config get-value core/project
+```

@@ -104,7 +104,7 @@ In this section, you'll learn how to build a macro in Sheets. In the next sectio
 
 Before you continue, you need a spreadsheet with some data. We've provided one for you: [click this link to copy the data sheet](https://docs.google.com/spreadsheets/d/1q1Mxbb4uC-P2ECsF0jKzWRE46iG7o8bjX2TWZhnGA0w/copy) and then click **Make a copy**.
 
-![5b8aded1bb349ecf.png](/codelabs/apps-script-fundamentals-1/img/5b8aded1bb349ecf.png)
+![5b8aded1bb349ecf.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/5b8aded1bb349ecf.png)
 
 A copy of the example spreadsheet for you to use is placed in your Google Drive folder and named "Copy of Top 10 Highest Grossing Films (2018)."
 
@@ -119,7 +119,7 @@ Once you start recording, Google Sheets remembers every action you take within t
 
 1.  In the Macro dialog, select **Relative reference.**
 
-![c59f2f12317352d2.gif](/codelabs/apps-script-fundamentals-1/img/c59f2f12317352d2.gif)
+![c59f2f12317352d2.gif](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/c59f2f12317352d2.gif)
 
 **Key Terms:** Macros can use two types of references in Sheets to refer to specific cells. **Absolute references** are fixed to the exact locations recorded (for example, cell A5), while **relative references** are applied using the user's current selection as a starting point (for example, the fourth cell down from the current selection).
 
@@ -127,48 +127,48 @@ This codelab asks you to use relative references for your macros.
 
 1.  Select **row 1**.
 
-![1d782ee30c66a02b.gif](/codelabs/apps-script-fundamentals-1/img/1d782ee30c66a02b.gif)
+![1d782ee30c66a02b.gif](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/1d782ee30c66a02b.gif)
 
 1.  Recolor the top row's **Fill Color** from white to **dark magenta 3**.
 
-![f7e7abaf76e338c7.png](/codelabs/apps-script-fundamentals-1/img/f7e7abaf76e338c7.png)
+![f7e7abaf76e338c7.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/f7e7abaf76e338c7.png)
 
 1.  Change the top row's **Text Color** from black to **white**.
 
-![d5e630acbe83148.png](/codelabs/apps-script-fundamentals-1/img/d5e630acbe83148.png)
+![d5e630acbe83148.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/d5e630acbe83148.png)
 
 1.  To bold the text, press **Ctrl+B** (or **Cmd+B** on macOS).
 2.  To freeze the top row, select **View > Freeze > 1 row**.
 
-![97cb244ffebe8953.png](/codelabs/apps-script-fundamentals-1/img/97cb244ffebe8953.png)
+![97cb244ffebe8953.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/97cb244ffebe8953.png)
 
 1.  Click **Save** in the macro dialog. A new dialog asks you to name the macro. Enter the name "Header" and click **Save**.
 
-![b4610a54340da518.gif](/codelabs/apps-script-fundamentals-1/img/b4610a54340da518.gif)
+![b4610a54340da518.gif](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/b4610a54340da518.gif)
 
 Using Sheets' user interface, you've made a macro specialized for formatting headers.
 
-![4ed7fbed18ea3681.png](/codelabs/apps-script-fundamentals-1/img/4ed7fbed18ea3681.png)
+![4ed7fbed18ea3681.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/4ed7fbed18ea3681.png)
 
 ## Activate your macro
 
 You can apply your new macro in Sheets by following these instructions:
 
-1.  To create a sheet, click Add Sheet ![9c9b0c19bf317e7f.png](/codelabs/apps-script-fundamentals-1/img/9c9b0c19bf317e7f.png).
+1.  To create a sheet, click Add Sheet ![9c9b0c19bf317e7f.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/9c9b0c19bf317e7f.png).
 
-![927c012b4e11475b.png](/codelabs/apps-script-fundamentals-1/img/927c012b4e11475b.png)
+![927c012b4e11475b.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/927c012b4e11475b.png)
 
 1.  In the new sheet, add some text to **A1:C2**. Feel free to follow the example inputs below:
 
-![c3aadaef52a609bf.png](/codelabs/apps-script-fundamentals-1/img/c3aadaef52a609bf.png)
+![c3aadaef52a609bf.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/c3aadaef52a609bf.png)
 
 1.  Highlight the first row.
 
-![cfe36fcf833d0bd7.gif](/codelabs/apps-script-fundamentals-1/img/cfe36fcf833d0bd7.gif)
+![cfe36fcf833d0bd7.gif](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/cfe36fcf833d0bd7.gif)
 
 1.  Select **Tools > Macros > Header** to apply the Macro to the selected area.
 
-![6279db9a020fc9e4.png](/codelabs/apps-script-fundamentals-1/img/6279db9a020fc9e4.png)
+![6279db9a020fc9e4.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/6279db9a020fc9e4.png)
 
 1.  Authorize the macro by following the on-screen instructions.
 
@@ -178,7 +178,7 @@ You can apply your new macro in Sheets by following these instructions:
 
 Congrats, you've learned how to apply macros in Sheets. Your spreadsheet should look like this:
 
-![7c7130a4a697bd92.png](/codelabs/apps-script-fundamentals-1/img/7c7130a4a697bd92.png)
+![7c7130a4a697bd92.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/7c7130a4a697bd92.png)
 
 Macros allow you to create spreadsheets efficiently, and, in the next part of this codelab, you'll learn how to make your macros even more powerful. Here's the secret: when you record a macro, what you're really doing is _writing Apps Script_ code. Behind the scenes, Sheets constructs the code that matches the macro actions. In the next section, you'll learn how to modify the code directly using Apps Script's in-browser editor.
 
@@ -192,7 +192,7 @@ As you create a macro, Google Sheets saves your actions as an Apps Script functi
 
 Now that you've created a macro, you can look at its code. View the macro script by selecting **Tools > Script editor** to open the browser code editor for Apps Script.
 
-![d9e99fe03c37ac87.png](/codelabs/apps-script-fundamentals-1/img/d9e99fe03c37ac87.png)
+![d9e99fe03c37ac87.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/d9e99fe03c37ac87.png)
 
 The script editor allows you to write code in Apps Script and to run those scripts on Google servers.
 
@@ -204,7 +204,7 @@ Review the current script. Sheets created the `macros.gs` script file when you r
 
 Look at the image below to get familiar with the structure of your macro function in Apps Script. If you recorded the steps in a different order, or clicked around the spreadsheet while recording, your code might look a little different than this.
 
-![5d653a69a0897adf.png](/codelabs/apps-script-fundamentals-1/img/5d653a69a0897adf.png)
+![5d653a69a0897adf.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/5d653a69a0897adf.png)
 
 The first line is an annotation comment that affects authorization:
 
@@ -286,15 +286,15 @@ Suppose you want to modify your macro so it only affects the first 10 columns of
 
 1.  To save your script, click Save ![save](https://fonts.gstatic.com/s/i/googlematerialicons/save/v6/24px.svg).
 2.  To rename your project, enter "Macros and Custom Functions" as the new project name and click **Rename**.
-3.  To create a sheet, in Sheets, click Add Sheet ![9c9b0c19bf317e7f.png](/codelabs/apps-script-fundamentals-1/img/9c9b0c19bf317e7f.png).
+3.  To create a sheet, in Sheets, click Add Sheet ![9c9b0c19bf317e7f.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/9c9b0c19bf317e7f.png).
 
-![927c012b4e11475b.png](/codelabs/apps-script-fundamentals-1/img/927c012b4e11475b.png)
+![927c012b4e11475b.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/927c012b4e11475b.png)
 
 1.  In the script editor, from the functions list, select `Header` and click **Run**.
 
 In your new sheet, you should see the following result:
 
-![8a58ba02535b2b9c.png](/codelabs/apps-script-fundamentals-1/img/8a58ba02535b2b9c.png)
+![8a58ba02535b2b9c.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/8a58ba02535b2b9c.png)
 
 By modifying the active or target range, your macro now affects only part of the first row. Many Apps Script methods take a range or A1 notation as a parameter to specify which cells to act on.
 
@@ -321,7 +321,7 @@ These instructions focus on changing the background color of your macro:
 
 In Sheets, the background fill of the first 10 columns in the first row recolors to a custom turquoise color:
 
-![bbd26f7c8e35039.png](/codelabs/apps-script-fundamentals-1/img/bbd26f7c8e35039.png)
+![bbd26f7c8e35039.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/bbd26f7c8e35039.png)
 
 By switching the [hex color notation](https://www.w3schools.com/colors/colors_picker.asp) in the parameters of [`setBackground(color)`](https://developers.google.com/apps-script/reference/spreadsheet/range#setbackgroundcolor) from `#4c1130` (dark magenta 3) to `#afeeee` (pale turquoise, an option not accessible in Sheets' default color menu), you change the color attribute of your macro's background color.
 
@@ -341,7 +341,7 @@ You've now modified the background color set by your macro. If you want to chang
 
 Return to Sheets to see the text color of the header row is now navy blue.
 
-![2eaf2fb4879e1b36.png](/codelabs/apps-script-fundamentals-1/img/2eaf2fb4879e1b36.png)
+![2eaf2fb4879e1b36.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/2eaf2fb4879e1b36.png)
 
 Now you've seen how macros are actually Sheets actions recorded as Apps Script code. In the next section, you can view another way Apps Script can help you work with Google Sheets: _custom functions_.
 
@@ -374,7 +374,7 @@ Before you can write your first custom function, modify your dataset to allow th
 1.  In Sheets, right-click **column H**.
 2.  In the resulting menu, click **Insert 1 right**.
 
-![fc1421cb1c456e52.gif](/codelabs/apps-script-fundamentals-1/img/fc1421cb1c456e52.gif)
+![fc1421cb1c456e52.gif](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/fc1421cb1c456e52.gif)
 
 1.  Label the column "Worldwide_Gross (Swiss francs)" in cell **I1**.
 
@@ -396,14 +396,14 @@ This is the code that will convert U.S. dollars to Swiss francs. Try the instruc
 
 To apply the formula to the rest of the cells in the column:
 
-1.  Move your cursor to the bottom-right corner of the **I2** cell and select the small blue box (your cursor should transform into ![9c9b0c19bf317e7f.png](/codelabs/apps-script-fundamentals-1/img/9c9b0c19bf317e7f.png) when pointing to the blue box).
+1.  Move your cursor to the bottom-right corner of the **I2** cell and select the small blue box (your cursor should transform into ![9c9b0c19bf317e7f.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/9c9b0c19bf317e7f.png) when pointing to the blue box).
 2.  Drag the blue box downwards to highlight the range **I3**:**I11**.
 
-![3cf46560d6cea0de.gif](/codelabs/apps-script-fundamentals-1/img/3cf46560d6cea0de.gif)
+![3cf46560d6cea0de.gif](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/3cf46560d6cea0de.gif)
 
 Column I now lists the Swiss franc conversions of the US dollar values in Column H.
 
-![7fc06b3d7e3e2a9.png](/codelabs/apps-script-fundamentals-1/img/7fc06b3d7e3e2a9.png)
+![7fc06b3d7e3e2a9.png](https://developers.google.com/codelabs/apps-script-fundamentals-1/img/7fc06b3d7e3e2a9.png)
 
 Congrats, you've created your first custom function. The next section explains the code that comprises `USDTOCHF()`.
 

@@ -82,7 +82,7 @@ Wait 30 seconds before login in again.
 ### Install openvpn and eas-rsa
 
 ```
-apt install openvpn easy-rsa=2.2.2
+apt install openvpn easy-rsa
 ```
 
 ## Create CA
@@ -109,6 +109,9 @@ See changes of link by doing `ls -l`
 
 ```
 ./easyrsa init-pki
+```
+
+```
 ./easyrsa build-ca
 ```
 
@@ -134,12 +137,9 @@ chmod 750 /etc/openvpn/keys
 root@ip-172-31-41-255:/home/admin/ca# ls
 easyrsa  openssl-easyrsa.cnf  openssl.cnf  pki  vars  x509-types
 root@ip-172-31-41-255:/home/admin/ca# cp -a pki/ca.crt /etc/openvpn/keys/
-root@ip-172-31-41-255:/home/admin/ca# cp -a pki/dh.pem /etc/openvpn/keys/
-dh2048.pem
-root@ip-172-31-41-255:/home/admin/ca# cp -a pki/issued/client1.crt /etc/o
-penvpn/keys/
-root@ip-172-31-41-255:/home/admin/ca# cp -a pki/private/client1.key /etc/
-openvpn/keys/
+root@ip-172-31-41-255:/home/admin/ca# cp -a pki/dh.pem /etc/openvpn/keys/dh2048.pem
+root@ip-172-31-41-255:/home/admin/ca# cp -a pki/issued/client1.crt /etc/openvpn/keys/
+root@ip-172-31-41-255:/home/admin/ca# cp -a pki/private/client1.key /etc/openvpn/keys/
 root@ip-172-31-41-255:/home/admin/ca#
 ```
 
@@ -154,10 +154,8 @@ root@ip-172-31-41-255:/home/admin/ca# ./easyrsa sign client john
 ```
 
 ```
-root@ip-172-31-41-255:/home/admin/ca# cp -a pki/issued/john.crt /etc/open
-vpn/keys/
-root@ip-172-31-41-255:/home/admin/ca# cp -a pki/private/john.key /etc/ope
-nvpn/keys/
+root@ip-172-31-41-255:/home/admin/ca# cp -a pki/issued/john.crt /etc/openvpn/keys/
+root@ip-172-31-41-255:/home/admin/ca# cp -a pki/private/john.key /etc/openvpn/keys/
 ```
 
 ## Configure OpenVPN server

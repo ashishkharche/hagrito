@@ -5,7 +5,13 @@ description: Bookmarks for learning OpenVPN.
 
 # OpenVPN - Bookmarks
 
+## Check if openvpn is working:
+
+[How do I configure OpenVPN on a CentOS instance?](https://www.alibabacloud.com/help/en/doc-detail/42521.htm)
+
 ## General
+
+
 
 [easy-rsa/README.quickstart.md at master · OpenVPN/easy-rsa](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md)
 

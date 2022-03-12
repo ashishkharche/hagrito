@@ -114,10 +114,10 @@ module.exports = {
     },
     algolia: {
       // The application ID provided by Algolia
-      appId: "UEBIPQ5PA4",
+      appId: "SO040MI8P2",
 
       // Public API key: it is safe to commit it
-      apiKey: "5c2b64dce59187f45f8c6cfb78dabeb5",
+      apiKey: "0277fa6dd6cd976e53529cdd85f6fe1a",
 
       indexName: "hagritoalgoliaindex",
 

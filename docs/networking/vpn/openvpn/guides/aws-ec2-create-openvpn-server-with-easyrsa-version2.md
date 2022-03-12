@@ -5,6 +5,8 @@ description: "AWS EC2 Create OpenVPN server with easy rsa version 2."
 
 # AWS EC2 Create OpenVPN server with easy rsa version 2
 
+NOTE: DOES NOT WORK. USE FOR REFERENCE TO BUILD UPON SOMETHING THAT MAY WORK.
+
 ## Create EC2 Instance
 
 Go to https://console.aws.amazon.com/ec2/v2/home

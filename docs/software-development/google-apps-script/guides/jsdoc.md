@@ -19,7 +19,7 @@ function USDTOCHF(dollars){
 }
 ```
 
-<google-codelab-step label="Welcome to Apps Script" duration="5" step="0" tabindex="-1"><google-codelab-about codelab-title="Fundamentals of Apps Script with Google Sheets #1: Macros &amp; Custom Functions" authors="Google Workspace Developer Relations" last-updated="2021-06-25T21:31:15Z" duration="60">Fundamentals of Apps Script with Google Sheets #1:Macros & Custom Functions
+Fundamentals of Apps Script with Google Sheets #1:Macros & Custom Functions
 
 ## About this codelab
 

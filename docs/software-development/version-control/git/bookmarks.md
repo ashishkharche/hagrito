@@ -17,7 +17,7 @@ description: Bookmarks for learning Git.
 
 [Repository: Directory content tracking | Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/1-Repository/1-directory-content-tracking.html)
 
-## Scenrio
+## Scenario
 
 [45 classic GIT operation scenarios](https://juejin.cn/post/7071064790952575007)
 

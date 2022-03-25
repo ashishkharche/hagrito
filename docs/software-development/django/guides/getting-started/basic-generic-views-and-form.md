@@ -136,3 +136,48 @@ urlpatterns = [
 ```
 
 Note that the name of the matched pattern in the path strings of the second and third patterns has changed from `<question_id>` to `<pk>`.
+
+## In `polls/views.py`
+
+```py
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
+from django.urls import reverse
+from django.views import generic
+
+from .models import Choice, Question
+
+
+class IndexView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
+
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return Question.objects.order_by('-pub_date')[:5]
+
+
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'polls/detail.html'
+
+
+class ResultsView(generic.DetailView):
+    model = Question
+    template_name = 'polls/results.html'
+
+
+def vote(request, question_id):
+    ... # same as above, no changes needed.
+```
+
+We’re using two generic views here: [`ListView`](../../ref/class-based-views/generic-display/#django.views.generic.list.ListView "django.views.generic.list.ListView") and [`DetailView`](../../ref/class-based-views/generic-display/#django.views.generic.detail.DetailView "django.views.generic.detail.DetailView"). Respectively, those two views abstract the concepts of “display a list of objects” and “display a detail page for a particular type of object.”
+
+*   Each generic view needs to know what model it will be acting upon. This is provided using the `model` attribute.
+*   The [`DetailView`](../../ref/class-based-views/generic-display/#django.views.generic.detail.DetailView "django.views.generic.detail.DetailView") generic view expects the primary key value captured from the URL to be called `"pk"`, so we’ve changed `question_id` to `pk` for the generic views.
+
+For ListView, as an example, the automatically generated context variable is `question_list`. To override this we provide the `context_object_name` attribute, specifying that we want to use `latest_question_list` instead.
+
+## References
+
+[Writing your first Django app, part 4 | Django documentation | Django](https://docs.djangoproject.com/en/3.2/intro/tutorial04/)

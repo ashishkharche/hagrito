@@ -5,6 +5,26 @@ description: "createsuperuser with python shell."
 
 # createsuperuser with python shell
 
+## METHOD 1
+
+```bash
+echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@myproject.com', 'password')" | python manage.py shell
+```
+
+## METHOD 2
+
+```bash
+./manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin3', 'admin3@myproject.com', 'password')"
+```
+
+or
+
+```bash
+python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin1', 'admin1@example.com', 'Test@123')"
+```
+
+## METHOD 3
+
 Usage: 
 
 `sh script.sh`

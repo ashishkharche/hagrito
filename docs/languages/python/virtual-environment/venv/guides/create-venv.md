@@ -35,6 +35,12 @@ Windows:
 .\env\Scripts\activate
 ```
 
+or
+
+```
+env\Scripts\activate.bat
+```
+
 ## Deactivate
 
 ```

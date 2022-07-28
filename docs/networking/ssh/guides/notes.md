@@ -16,3 +16,10 @@ ssh mike@192.168.56.102 hostname
 Prints hostname and closes session.
 
 
+## Alt ssh-copy-id
+
+https://gist.github.com/nickbayley/ef2b6744b976c96db6e9
+
+## Difference between SSH -L and -D
+
+https://superuser.com/questions/408031/differences-between-ssh-l-to-d

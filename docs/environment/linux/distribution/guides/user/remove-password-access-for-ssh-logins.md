@@ -45,8 +45,12 @@ ssh-copy-id -i ~/.ssh/id_rsa_filename username@139.xx2.xxx.184
 
 ## Alternatively, If you dont have ssh-copy-id installed
 
-On your 
+### NOT SURE ABOUT THE USAGE OF THIS
 
 ```
 mkdir -p ~/.ssh && sudo chmod -R 700 ~/.ssh/
 ```
+
+## Additional Info
+
+https://www.dwarmstrong.org/ssh-keys/

@@ -107,6 +107,10 @@ ALTER ROLE myprojectuser SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
 ```
 
+```
+\q
+```
+
 ## Virtual environment
 
 ```
@@ -214,3 +218,19 @@ Use `gunicorn` from your virtual environment only.
 ```
 /home/sammy/digicn/myprojectenv/bin/gunicorn --bind 0.0.0.0:8000 myproject.wsgi
 ```
+
+## Troubleshooting
+
+Nginx not serving static files?
+
+Change nginx user to root
+
+```
+sudo nano /etc/nginx/nginx.conf
+```
+
+Test: Create ok.txt with some context in static folder.
+
+Go to: http://137.184.106.123/static/ok.txt to see if it loads or show 403 forbidden error
+
+Ref: https://forum.djangoproject.com/t/configure-static-files-to-work-with-nginx/5689/12

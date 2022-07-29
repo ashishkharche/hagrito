@@ -57,6 +57,22 @@ ufw status
 
 Note: The firewall is currently blocking all connections except for SSH.
 
+## SSH key copy
+
+```
+rsync --archive --chown=sammy:sammy ~/.ssh /home/sammy
+```
+
+## Exit and login as user
+
+```
+exit
+```
+
+```
+ssh sammy@ip
+```
+
 ## Install packages
 
 ```

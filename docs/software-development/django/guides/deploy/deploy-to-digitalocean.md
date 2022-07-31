@@ -24,6 +24,11 @@ Host 198.211.109.111
 
 where 198.211.109.165 is the IP address of the droplet
 
+## Login as root
+
+```
+ssh root@137.184.150.111
+```
 
 ## Create new user
 
@@ -172,6 +177,35 @@ pip install psycopg2-binary
 
 and remove psycopg2-binary from requirements.txt
 
+## Edit settings
+
+settings.py:
+
+```
+ALLOWED_HOSTS = ['your_server_domain_or_IP', 'second_domain_or_IP', . . ., 'localhost']
+```
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
+
+```
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+```
+
 ## Migrations
 
 ```
@@ -219,6 +253,141 @@ Use `gunicorn` from your virtual environment only.
 /home/sammy/digicn/myprojectenv/bin/gunicorn --bind 0.0.0.0:8000 myproject.wsgi
 ```
 
+```
+deactivate
+```
+
+## Gunicorn socket and service
+
+### Socket
+
+```
+sudo micro /etc/systemd/system/gunicorn.socket
+```
+
+```
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
+```
+
+### Service
+
+```
+sudo micro /etc/systemd/system/gunicorn.service
+```
+```
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=sammy
+Group=www-data
+WorkingDirectory=/home/sammy/myprojectdir
+ExecStart=/home/sammy/myprojectdir/myprojectenv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          myproject.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+sudo systemctl start gunicorn.socket
+```
+
+```
+sudo systemctl enable gunicorn.socket
+```
+
+```
+sudo systemctl status gunicorn.socket
+```
+
+```
+file /run/gunicorn.sock
+```
+
+```
+sudo journalctl -u gunicorn.socket
+```
+
+```
+sudo systemctl status gunicorn
+```
+
+```
+curl --unix-socket /run/gunicorn.sock localhost
+```
+
+```
+sudo systemctl status gunicorn
+```
+
+```
+sudo journalctl -u gunicorn
+```
+
+Check your /etc/systemd/system/gunicorn.service file for problems. If you make changes to the /etc/systemd/system/gunicorn.service file, reload the daemon to reread the service definition and restart the Gunicorn process by typing:
+```
+sudo systemctl daemon-reload
+```
+```
+sudo systemctl restart gunicorn
+```
+
+## Nginx
+
+```
+sudo micro /etc/nginx/sites-available/myproject
+```
+
+```
+server {
+    listen 80;
+    server_name server_domain_or_IP;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/sammy/myprojectdir;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+}
+```
+
+```
+sudo ln -s /etc/nginx/sites-available/cndevproject /etc/nginx/sites-enabled
+```
+
+```
+sudo nginx -t
+```
+
+```
+sudo systemctl restart nginx
+```
+
+```
+sudo ufw delete allow 8000
+```
+
+```
+sudo ufw allow 'Nginx Full'
+```
+
 ## Troubleshooting
 
 Nginx not serving static files?
@@ -226,7 +395,7 @@ Nginx not serving static files?
 Change nginx user to root
 
 ```
-sudo nano /etc/nginx/nginx.conf
+sudo micro /etc/nginx/nginx.conf
 ```
 
 Test: Create ok.txt with some context in static folder.
@@ -234,3 +403,22 @@ Test: Create ok.txt with some context in static folder.
 Go to: http://137.184.106.123/static/ok.txt to see if it loads or show 403 forbidden error
 
 Ref: https://forum.djangoproject.com/t/configure-static-files-to-work-with-nginx/5689/12
+
+## 413 entity too large?
+
+In nginx.conf
+
+IN http block
+
+Add:
+
+```
+client_max_body_size 64M;
+```
+
+## Update changes to code
+
+```
+sudo service gunicorn restart
+sudo service nginx restart #only if you need to
+```

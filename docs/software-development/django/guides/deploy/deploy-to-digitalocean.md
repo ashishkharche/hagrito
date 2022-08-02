@@ -136,8 +136,10 @@ source myprojectenv/bin/activate
 Create ssh files in `~/.ssh`:
 
 ```
-ssh-keygen -f id_filename
+ssh-keygen -f id_cnapi_1
 ```
+
+Copy .pub key in ssh Github.com settings
 
 Create `config` file in `~/.ssh`
 
@@ -250,7 +252,7 @@ pip install gunicorn
 Use `gunicorn` from your virtual environment only.
 
 ```
-/home/sammy/digicn/myprojectenv/bin/gunicorn --bind 0.0.0.0:8000 myproject.wsgi
+/home/sammy/myprojectdir/venv/bin/gunicorn --bind 0.0.0.0:8000 myproject.wsgi
 ```
 
 ```
@@ -291,11 +293,11 @@ After=network.target
 User=sammy
 Group=www-data
 WorkingDirectory=/home/sammy/myprojectdir
-ExecStart=/home/sammy/myprojectdir/myprojectenv/bin/gunicorn \
+ExecStart=/home/sammy/myprojectdir/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          myproject.wsgi:application
+          cndevproject.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
@@ -348,7 +350,7 @@ sudo systemctl restart gunicorn
 ## Nginx
 
 ```
-sudo micro /etc/nginx/sites-available/myproject
+sudo micro /etc/nginx/sites-available/cndevproject
 ```
 
 ```

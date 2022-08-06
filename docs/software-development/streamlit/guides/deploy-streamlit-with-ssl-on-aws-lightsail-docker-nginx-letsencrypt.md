@@ -35,7 +35,7 @@ Or use selected like 80, 443
 
 ## SSH git
 
-In `/.ssh`, generate keys with `ssh-keygen`
+In `~/.ssh`, generate keys with `ssh-keygen`
 
 Copy the `id_rsa.pub` key and paste into GitHub settings
 

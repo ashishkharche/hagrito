@@ -124,11 +124,11 @@ cd ~/myprojectdir
 ```
 
 ```
-python3 -m venv myprojectenv
+python3 -m venv venv
 ```
 
 ```
-source myprojectenv/bin/activate
+source venv/bin/activate
 ```
 
 ## Git
@@ -161,7 +161,7 @@ git clone git@github.com:androiddevnotes/cn-programming-api.git
 ## Django packages
 
 ```
-pip install -r requirements.txt
+pip install -r requirements.txt --no-cache-dir
 ```
 
 If you get error: 
@@ -174,7 +174,7 @@ You may install a binary package by installing 'psycopg2-binary'
 Then do:
 
 ```
-pip install psycopg2-binary
+pip install psycopg2-binary --no-cache-dir
 ```
 
 and remove psycopg2-binary from requirements.txt
@@ -252,7 +252,7 @@ pip install gunicorn
 Use `gunicorn` from your virtual environment only.
 
 ```
-/home/sammy/myprojectdir/venv/bin/gunicorn --bind 0.0.0.0:8000 myproject.wsgi
+/home/sammy/myprojectdir/venv/bin/gunicorn --bind 0.0.0.0:8000 cndevproject.wsgi
 ```
 
 ```

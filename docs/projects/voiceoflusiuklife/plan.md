@@ -28,3 +28,23 @@ https://github.com/LokerL/tts-vue
 https://github.com/ezshine/mstts-js
 
 https://cndevapi.com/r/javascript/post-detail/14
+
+## Mouth animation
+
+https://github.com/DanielSWolf/rhubarb-lip-sync
+
+https://www.reddit.com/r/learnanimation/comments/k3xizy/is_there_any_ways_to_automate_open_and_close/
+
+https://www.youtube.com/watch?v=3pjPJ1YI3GE
+
+https://helpx.adobe.com/animate/how-to/auto-lip-sync.html
+
+https://helpx.adobe.com/uk/animate/how-to/auto-lip-sync-animation.html
+
+## Fun
+
+https://github.com/cgoldsby/LoginCritter
+
+https://github.com/kawmra/LoginAnimal
+
+https://qiita.com/kawmra/items/55d4b53eb1abd0c30eb8

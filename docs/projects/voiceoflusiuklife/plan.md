@@ -11,6 +11,8 @@ description: "Plan of voiceoflusiuklife."
 
 Refer: 
 
+https://github.com/jedwatson/react-select
+
 https://github.com/0surface/speak--tts-react-demo
 
 https://codesandbox.io/s/rmloxx60q4
@@ -48,3 +50,23 @@ https://github.com/cgoldsby/LoginCritter
 https://github.com/kawmra/LoginAnimal
 
 https://qiita.com/kawmra/items/55d4b53eb1abd0c30eb8
+
+https://github.com/Tonejs/Tone.js
+
+## Server / Backend
+
+https://github.com/bezkoder/express-file-upload
+
+## Learning Frontend
+
+https://www.bezkoder.com/react-hooks-file-upload/
+
+## Sending voice from Backend
+
+[rest - How do I create an expressjs endpoint that uses azure tts to send audio to a web app? - Stack Overflow](https://stackoverflow.com/questions/69345486/how-do-i-create-an-expressjs-endpoint-that-uses-azure-tts-to-send-audio-to-a-web)
+
+## Range
+
+https://codesandbox.io/s/njcy4?file=/src/App.js
+
+https://codesandbox.io/s/vvsjt?file=/src/App.js

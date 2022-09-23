@@ -70,3 +70,21 @@ https://www.bezkoder.com/react-hooks-file-upload/
 https://codesandbox.io/s/njcy4?file=/src/App.js
 
 https://codesandbox.io/s/vvsjt?file=/src/App.js
+
+## BEATBOX
+
+https://github.com/danielhoogerwerf/drumgrid-frontend
+
+https://github.com/stellalc7/synthgarden
+
+https://github.com/zgreen/tomato
+
+### SAVE file
+
+https://codepen.io/jakealbaugh/pen/QVqgBE
+
+### MUSIC
+
+https://github.com/edpe/inside_looking_out
+
+https://github.com/jessefischer/snake-sequencer

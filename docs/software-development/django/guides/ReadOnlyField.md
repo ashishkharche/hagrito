@@ -87,7 +87,7 @@ owner = serializers.ReadOnlyField(source='owner.username')
 
 ### Documentation search
 
-<form role="form" autocomplete="off"><input type="text" name="q" class="form-control" placeholder="Search..." id="mkdocs-search-query"></form>
+<!-- <form role="form" autocomplete="off"><input type="text" name="q" class="form-control" placeholder="Search..." id="mkdocs-search-query"></form> -->
 
 Close
 

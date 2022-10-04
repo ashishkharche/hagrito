@@ -17,7 +17,12 @@ module.exports = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
-    hideableSidebar: true,
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
+
     navbar: {
       title: "Hagrito",
       logo: {

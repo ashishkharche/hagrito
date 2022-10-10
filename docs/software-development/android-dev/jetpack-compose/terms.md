@@ -7,6 +7,33 @@ description: "Jetpack Compose General Notes."
 
 ## Terms
 
+### modifiers
+
+To decorate or configure a composable, Compose uses modifiers.
+
+### Resource Manager
+
+Use the Resource Manager to import an image.
+
+```kotlin
+Image(
+        painter = painterResource(R.drawable.profile_picture),
+        contentDescription = "Contact profile picture",
+    )
+```
+
+### Box
+
+Use Box to stack elements.
+
+### Row
+
+You can use Row to arrange items horizontally
+
+### Column
+
+The `Column` function lets you arrange elements vertically.
+
 ### Preview annotation
 
 The `@Preview` annotation lets you preview your composable functions within Android Studio without having to build and install the app to an Android device or emulator.

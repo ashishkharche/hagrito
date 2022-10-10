@@ -1,0 +1,1 @@
+https://github.com/ecospend/mobile-team-standards/blob/main/standards/code_style/Android_coding_style_guideline.md

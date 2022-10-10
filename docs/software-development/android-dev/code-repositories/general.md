@@ -21,7 +21,6 @@ Great tests
 
 Firestore, lyrics quiz style game, crashlytics
 
-
 ## https://github.com/androiddevnotes/A110-brochures-cache-room-retrofit
 
 Room retrofit cache and some viewmodel test with coroutine

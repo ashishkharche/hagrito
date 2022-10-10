@@ -7,6 +7,10 @@ description: "Jetpack Compose General Notes."
 
 ## Terms
 
+### Preview annotation
+
+The `@Preview` annotation lets you preview your composable functions within Android Studio without having to build and install the app to an Android device or emulator.
+
 ### Kotlin compiler plugin
 
 Jetpack Compose uses a Kotlin compiler plugin to transform these composable functions into the app's UI elements.

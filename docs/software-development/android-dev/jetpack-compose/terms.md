@@ -7,6 +7,26 @@ description: "Jetpack Compose General Notes."
 
 ## Terms
 
+### animateContentSize
+
+use the `animateContentSize` modifier to animate the message container size smoothly
+
+### animateColorAsState
+
+will animate the background color by gradually modifying its value from `MaterialTheme.colorScheme.surface` to `MaterialTheme.colorScheme.primary` and vice versa.
+To do so, you will use the `animateColorAsState` function.
+
+### remember and mutableStateOf and recomposition
+
+Composable functions can store local state in memory by using `remember`, and track changes to the value passed to `mutableStateOf`. Composables (and their children) using this state will get redrawn automatically when the value is updated. This is called recomposition.
+
+
+### Local UI State
+
+To store this local UI state, you need to keep track of whether a message has been expanded or not. To keep track of this state change, you have to use the functions `remember` and `mutableStateOf`.
+
+* [Android Compose Tutorial  |  Android Developers](https://developer.android.com/jetpack/compose/tutorial)
+
 ### LazyColumn and LazyRow
 
 Compose’s LazyColumn and LazyRow. These composables render only the elements that are visible on screen, so they are designed to be very efficient for long lists.

@@ -5,7 +5,34 @@ description: "Short Code Snippets Jetpack Compose."
 
 # Short Code Snippets Jetpack Compose
 
-### animateContentSize and animateColorAsState
+## Place composable at the end of the row
+
+```kotlin
+@Composable
+private fun Greeting(name: String) {
+
+    Surface(
+        color = MaterialTheme.colors.primary,
+        modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp)
+    ) {
+        Row(modifier = Modifier.padding(24.dp)) {
+            Column(modifier = Modifier.weight(1f)) {
+                Text(text = "Hello, ")
+                Text(text = name)
+            }
+            OutlinedButton(
+                onClick = { /* TODO */ }
+            ) {
+                Text("Show more")
+            }
+        }
+    }
+}
+```
+
+![](https://developer.android.com/static/codelabs/jetpack-compose-basics/img/e74f07b36865a878.png)
+
+## animateContentSize and animateColorAsState
 
 ```kotlin
 // ...

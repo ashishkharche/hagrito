@@ -39,6 +39,8 @@ Material Design is built around three pillars: `Color`, `Typography`, and `Shape
 
 To decorate or configure a composable, Compose uses modifiers.
 
+Modifiers tell a UI element how to lay out, display, or behave within its parent layout.
+
 ### Resource Manager
 
 Use the Resource Manager to import an image.

@@ -7,6 +7,14 @@ description: "Jetpack Compose General Notes."
 
 ## Terms
 
+### LazyColumn and LazyRow
+
+Compose’s LazyColumn and LazyRow. These composables render only the elements that are visible on screen, so they are designed to be very efficient for long lists.
+
+### Material Design Compose
+
+Material Design is built around three pillars: `Color`, `Typography`, and `Shape`.
+
 ### modifiers
 
 To decorate or configure a composable, Compose uses modifiers.

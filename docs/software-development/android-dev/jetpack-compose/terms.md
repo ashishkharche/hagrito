@@ -7,6 +7,10 @@ description: "Jetpack Compose General Notes."
 
 ## Terms
 
+### state hoisting
+
+In Composable functions, state that is read or modified by multiple functions should live in a common ancestor—this process is called **state hoisting**. To _hoist_ means to _lift_ or _elevate_.
+
 ### animateContentSize
 
 use the `animateContentSize` modifier to animate the message container size smoothly

@@ -5,6 +5,18 @@ description: "To Remember Jetpack Compose."
 
 # To Remember Jetpack Compose
 
+## In compose, we don't hide UI elements
+
+In Compose **you don't hide UI elements**. Instead, you simply don't add them to the composition, so they're not added to the UI tree that Compose generates. You do this with simple conditional Kotlin logic. For example to show the onboarding screen or the list of greetings you would do something like:
+
+## `by` delegate
+
+shouldShowOnboarding is using a by keyword instead of the =. This is a property delegate that saves you from typing .value every time.
+
+```kotlin
+var shouldShowOnboarding by remember { mutableStateOf(true) }
+```
+
 ## No nee to `remember` in simple calculations
 
 You don't need to remember `extraPadding` against recomposition because it's doing a simple calculation.
